@@ -1,0 +1,183 @@
+.gallery-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+        width: 80%;
+        h1 {
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 29px;
+            font-weight: 400;
+        }
+        .underline {
+            width: 229px;
+            margin-bottom: 29px;
+        }
+    }
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        .row1 {
+            justify-content: center;
+            display: flex;
+            margin-bottom: 20px;
+            .imageOne {
+                max-width: 489px;
+                height: 187px;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                }
+            }
+            .imageTwo {
+                max-width: 187px;
+                max-height: 187px;
+                position: relative;
+                margin-left: 20px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                }
+            }
+            .imageThree {
+                margin-left: 20px;
+                max-width: 265px;
+                max-height: 187px;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                }
+            }
+        }
+        .row2 {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: center;
+            .imageOne {
+                max-width: 603px;
+                height: 306px;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                }
+            }
+            .imageTwo {
+                max-width: 355px;
+                max-height: 306px;
+                position: relative;
+                margin-left: 20px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .gallery-page {
+        .container {
+            .row1 {
+                flex-direction: column;
+                align-items: center;
+                .imageOne {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+                .imageTwo {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 306px;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
+                .imageThree {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 306px;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
+            }
+            .row2 {
+                flex-direction: column;
+                align-items: center;
+                .imageOne {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+                .imageTwo {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 306px;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
+                .imageThree {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 306px;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

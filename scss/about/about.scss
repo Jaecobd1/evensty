@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .hero-image {
+        .overlay {
+            background-color: rgba($color: $yellow, $alpha: 0.8);
+            h1 {
+                font-size: 25px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                line-height: 29px;
+                font-weight: 400;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .underline {
+        width: 229px;
+    }
+    .paragraph {
+        max-width: 979.5px;
+        width: 80%;
+        p {
+            margin: 0 auto;
+        }
+    }
+}

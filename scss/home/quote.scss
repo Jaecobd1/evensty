@@ -1,0 +1,33 @@
+.quote {
+    width: 100%;
+    min-height: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    blockquote {
+        width: 80%;
+        max-width: 789px;
+        q {
+            color: $yellow;
+            font-style: italic;
+            line-height: 22px;
+            font-size: 15px;
+        }
+        cite {
+            .name {
+                margin-top: 20px;
+                color: $pink;
+                font-style: normal;
+                font-family: PT-Serif;
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+            .title {
+                font-style: normal;
+                color: #A8A8A8;
+                font-size: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,913 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+@font-face {
+  font-family: PT-Serif;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+.app {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 92px;
+  border-bottom: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: sticky;
+  z-index: 11;
+}
+nav .logo {
+  height: 42px;
+  width: 92px;
+}
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 280px;
+}
+nav .links a {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  font-weight: 200;
+}
+nav .links .slash {
+  color: #EE4367;
+}
+
+.dark .links a {
+  color: #000;
+}
+
+footer {
+  height: 455px;
+  width: 100%;
+  background-color: #EE4367;
+  position: relative;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 46px;
+}
+footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 70px;
+  margin-bottom: 46px;
+}
+footer .info a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+}
+footer .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .subscribe .input {
+  background-color: #F56B88;
+  height: 60px;
+  max-width: 529px;
+  min-width: 50vw;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+footer .subscribe .input input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+footer .subscribe .input input:focus {
+  border: none;
+}
+footer .subscribe .input ::-webkit-input-placeholder {
+  color: white;
+  margin-right: 20px;
+}
+footer .subscribe .input ::-moz-placeholder {
+  color: white;
+  margin-right: 20px;
+}
+footer .subscribe .input :-ms-input-placeholder {
+  color: white;
+  margin-right: 20px;
+}
+footer .subscribe .input ::-ms-input-placeholder {
+  color: white;
+  margin-right: 20px;
+}
+footer .subscribe .input ::placeholder {
+  color: white;
+  margin-right: 20px;
+}
+footer .subscribe button {
+  text-transform: uppercase;
+  max-width: 167px;
+  padding: 0 39px;
+  height: 60px;
+  color: #EE4367;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+footer .social {
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 46px;
+}
+footer .social img {
+  height: 32px;
+  width: 32px;
+}
+footer .copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  footer .logo {
+    margin-bottom: 20px;
+  }
+  footer .subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  footer .social {
+    margin-bottom: 20px;
+  }
+}
+.hero-image {
+  max-width: 979.5px;
+  height: 378.75px;
+  position: relative;
+}
+.hero-image .image {
+  max-width: 979.5px;
+  height: 378.75px;
+}
+.hero-image .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.hero-image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.yellow-overlay {
+  background-color: rgba(255, 209, 64, 0.8);
+}
+
+.pink-overlay {
+  background-color: rgba(238, 67, 103, 0.8);
+}
+
+.darkGreen-overlay {
+  background-color: rgba(8, 173, 105, 0.8);
+}
+
+.purple-overlay {
+  background-color: rgba(84, 13, 110, 0.8);
+}
+
+.green-overlay {
+  background-color: rgba(59, 206, 171, 0.8);
+}
+
+.pink-text {
+  color: #EE4367;
+}
+
+.darkGreen-text {
+  color: #08AD69;
+}
+
+.purple-text {
+  color: #540D6E;
+}
+
+.gallery .hero-image {
+  margin-bottom: 50.5px;
+}
+.gallery .hero-image .overlay h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+.gallery .hero-image .overlay .number {
+  font-size: 300px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+.gallery .hero-image .overlay .text {
+  font-size: 140px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery .paragraph {
+  max-width: 979.5px;
+  width: 80%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.gallery .paragraph p {
+  font-size: 16px;
+  margin: 20px;
+  max-width: 451;
+}
+
+.paragraph {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 95px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.paragraph p {
+  width: 980px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  max-width: 100%;
+}
+
+.underline-wrapper {
+  max-width: 979.5px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 36.5px;
+}
+
+.underline {
+  border-bottom: 2px solid black;
+  margin-top: 16px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media only screen and (max-width: 1020px) {
+  .hero-image {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .underline-wrapper {
+    width: 80%;
+  }
+
+  .gallery .hero-image .overlay .number {
+    font-size: 150px;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  .gallery .hero-image .overlay .text {
+    font-size: 70px;
+  }
+  .gallery .paragraph {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 80%;
+  }
+  .gallery .paragraph p {
+    width: 100%;
+  }
+}
+.home {
+  position: relative;
+  margin-top: -150px;
+}
+.home .hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.home .hero img {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .hero .overlay {
+  height: 500px;
+  width: 100%;
+  background-color: rgba(255, 209, 64, 0.8);
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home .hero .overlay .title {
+  margin-top: 56px;
+}
+.home .hero .overlay .title h1 {
+  color: #fff;
+  font-family: PT-Serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.home .hero .overlay .title h2 {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+  color: #EE4367;
+  text-align: center;
+  line-height: 17px;
+}
+.home .hero .overlay p {
+  margin-top: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-style: italic;
+  font-weight: 200;
+  max-width: 350px;
+  text-align: center;
+}
+.home .hero .overlay .btn {
+  margin-top: 61px;
+  background-color: #EE4367;
+  padding: 12px 26px;
+}
+.home .hero .overlay .btn a {
+  text-decoration: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.quote {
+  width: 100%;
+  min-height: 300px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.quote blockquote {
+  width: 80%;
+  max-width: 789px;
+}
+.quote blockquote q {
+  color: #FFD140;
+  font-style: italic;
+  line-height: 22px;
+  font-size: 15px;
+}
+.quote blockquote cite .name {
+  margin-top: 20px;
+  color: #EE4367;
+  font-style: normal;
+  font-family: PT-Serif;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.quote blockquote cite .title {
+  font-style: normal;
+  color: #A8A8A8;
+  font-size: 10px;
+}
+
+.events {
+  width: 100%;
+  min-height: 400px;
+  background-color: #540D6E;
+  color: white;
+}
+.events .title {
+  padding-top: 50px;
+  border-bottom: 2px solid white;
+  width: 392px;
+  margin-left: 40px;
+}
+.events .title h1 {
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10.5px;
+}
+.events .wrapper {
+  margin: 0 auto;
+  margin-top: 34.5px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.events .wrapper .container {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.events .wrapper .container .date {
+  width: 60px;
+  height: 60px;
+  background-color: #EE4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.events .wrapper .container .date .number {
+  font-size: 22px;
+  font-style: bold;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.events .wrapper .container .date .month {
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+.events .wrapper .container .text {
+  margin-left: 10px;
+  width: 140px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.events .wrapper .container .text .main {
+  font-size: 15px;
+  color: #fff;
+}
+.events .wrapper .container .text .bottom {
+  color: #EE4367;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .events .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .hero-image .overlay {
+  background-color: rgba(255, 209, 64, 0.8);
+}
+.about .hero-image .overlay h1 {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.about .underline {
+  width: 229px;
+}
+.about .paragraph {
+  max-width: 979.5px;
+  width: 80%;
+}
+.about .paragraph p {
+  margin: 0 auto;
+}
+
+.gallery-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery-page .title {
+  width: 80%;
+}
+.gallery-page .title h1 {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 29px;
+  font-weight: 400;
+}
+.gallery-page .title .underline {
+  width: 229px;
+  margin-bottom: 29px;
+}
+.gallery-page .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.gallery-page .container .row1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.gallery-page .container .row1 .imageOne {
+  max-width: 489px;
+  height: 187px;
+  position: relative;
+}
+.gallery-page .container .row1 .imageOne img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row1 .imageOne .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row1 .imageTwo {
+  max-width: 187px;
+  max-height: 187px;
+  position: relative;
+  margin-left: 20px;
+}
+.gallery-page .container .row1 .imageTwo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row1 .imageTwo .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row1 .imageThree {
+  margin-left: 20px;
+  max-width: 265px;
+  max-height: 187px;
+  position: relative;
+}
+.gallery-page .container .row1 .imageThree img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row1 .imageThree .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery-page .container .row2 .imageOne {
+  max-width: 603px;
+  height: 306px;
+  position: relative;
+}
+.gallery-page .container .row2 .imageOne img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row2 .imageOne .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row2 .imageTwo {
+  max-width: 355px;
+  max-height: 306px;
+  position: relative;
+  margin-left: 20px;
+}
+.gallery-page .container .row2 .imageTwo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row2 .imageTwo .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 1020px) {
+  .gallery-page .container .row1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery-page .container .row1 .imageOne {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row1 .imageTwo {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row1 .imageThree {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery-page .container .row2 .imageOne {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row2 .imageTwo {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row2 .imageThree {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.yellow-text {
+  color: #FFD140;
+  text-shadow: 5px 5px 6px #111;
+}

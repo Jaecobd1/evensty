@@ -1,0 +1,15 @@
+$purple: #540D6E;
+$pink: #EE4367;
+$yellow: #FFD140;
+$lightGreen: #3BCEAB;
+$darkGreen: #08AD69;
+@import './structure.scss';
+@import './nav.scss';
+@import './footer.scss';
+@import './components.scss';
+@import './home/hero.scss';
+@import './home/quote.scss';
+@import './home/events.scss';
+@import './about/about.scss';
+@import './gallery-page.scss';
+@import './gallery/gallery.scss';

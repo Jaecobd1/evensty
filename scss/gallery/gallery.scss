@@ -1,0 +1,12 @@
+.gallery {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yellow-text {
+    color: $yellow;
+    text-shadow: 5px 5px 6px #111;
+}

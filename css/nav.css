@@ -1,0 +1,17 @@
+nav {
+  width: 100%;
+  height: 92px;
+  border-bottom: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links a {
+  color: white;
+}
+nav .links .slash {
+  color: #EE4367;
+}

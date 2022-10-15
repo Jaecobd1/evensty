@@ -1,0 +1,104 @@
+footer {
+    height: 455px;
+    width: 100%;
+    background-color: $pink;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 46px;
+    }
+    .info {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 70px;
+        margin-bottom: 46px;
+        a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+    }
+    .subscribe {
+        display: flex;
+        .input {
+            background-color: #F56B88;
+            height: 60px;
+            max-width: 529px;
+            min-width: 50vw;
+            margin-bottom: 20px;
+            padding: 20px;
+            input {
+                background-color: rgba(0, 0, 0, 0);
+                border: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+            }
+            input:focus {
+                border: none;
+            }
+             ::placeholder {
+                color: white;
+                margin-right: 20px;
+            }
+        }
+        button {
+            text-transform: uppercase;
+            max-width: 167px;
+            padding: 0 39px;
+            height: 60px;
+            color: $pink;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+        }
+    }
+    .social {
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 46px;
+        img {
+            height: 32px;
+            width: 32px;
+        }
+    }
+    .copyright {
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        font-weight: lighter;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        .logo {
+            margin-bottom: 20px;
+        }
+        .subscribe {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .social {
+            margin-bottom: 20px;
+        }
+    }
+}
