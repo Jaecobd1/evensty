@@ -25,7 +25,7 @@
             display: flex;
             margin-bottom: 20px;
             .imageOne {
-                max-width: 489px;
+                width: 489px;
                 height: 187px;
                 position: relative;
                 img {
@@ -44,10 +44,10 @@
                 }
             }
             .imageTwo {
-                max-width: 187px;
-                max-height: 187px;
-                position: relative;
+                width: 187px;
+                height: 187px;
                 margin-left: 20px;
+                position: relative;
                 img {
                     width: 100%;
                     height: 100%;
@@ -65,8 +65,8 @@
             }
             .imageThree {
                 margin-left: 20px;
-                max-width: 265px;
-                max-height: 187px;
+                width: 265px;
+                height: 187px;
                 position: relative;
                 img {
                     width: 100%;
@@ -86,10 +86,10 @@
         }
         .row2 {
             display: flex;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
             justify-content: center;
             .imageOne {
-                max-width: 603px;
+                width: 603px;
                 height: 306px;
                 position: relative;
                 img {
@@ -108,8 +108,8 @@
                 }
             }
             .imageTwo {
-                max-width: 355px;
-                max-height: 306px;
+                width: 355px;
+                height: 306px;
                 position: relative;
                 margin-left: 20px;
                 img {
@@ -131,14 +131,16 @@
     }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1234px) {
     .gallery-page {
         .container {
             .row1 {
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
                 .imageOne {
                     max-width: 100%;
+                    width: 100%;
                     margin-bottom: 20px;
                 }
                 .imageTwo {

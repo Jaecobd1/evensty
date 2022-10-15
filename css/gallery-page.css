@@ -1,5 +1,245 @@
 .gallery-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery-page .title {
+  width: 80%;
+}
+.gallery-page .title h1 {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 29px;
+  font-weight: 400;
+}
+.gallery-page .title .underline {
+  width: 229px;
+  margin-bottom: 29px;
+}
+.gallery-page .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.gallery-page .container .row1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.gallery-page .container .row1 .imageOne {
+  max-width: 489px;
+  height: 187px;
+  position: relative;
+}
+.gallery-page .container .row1 .imageOne img {
   width: 100%;
   height: 100%;
-  background-color: green;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row1 .imageOne .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row1 .imageTwo {
+  max-width: 187px;
+  max-height: 187px;
+  position: relative;
+}
+.gallery-page .container .row1 .imageTwo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row1 .imageTwo .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row1 .imageThree {
+  margin-left: 20px;
+  max-width: 265px;
+  max-height: 187px;
+  position: relative;
+}
+.gallery-page .container .row1 .imageThree img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row1 .imageThree .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery-page .container .row2 .imageOne {
+  max-width: 603px;
+  height: 306px;
+  position: relative;
+}
+.gallery-page .container .row2 .imageOne img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row2 .imageOne .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.gallery-page .container .row2 .imageTwo {
+  max-width: 355px;
+  max-height: 306px;
+  position: relative;
+  margin-left: 20px;
+}
+.gallery-page .container .row2 .imageTwo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-page .container .row2 .imageTwo .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 1020px) {
+  .gallery-page .container .row1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery-page .container .row1 .imageOne {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row1 .imageTwo {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row1 .imageThree {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery-page .container .row2 .imageOne {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row2 .imageTwo {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .gallery-page .container .row2 .imageThree {
+    width: 100%;
+    max-width: 100%;
+    height: 306px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }

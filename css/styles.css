@@ -223,12 +223,12 @@ footer .copyright {
   }
 }
 .hero-image {
-  max-width: 979.5px;
+  width: 80%;
   height: 378.75px;
   position: relative;
 }
 .hero-image .image {
-  max-width: 979.5px;
+  width: 100%;
   height: 378.75px;
 }
 .hero-image .image img {
@@ -281,18 +281,25 @@ footer .copyright {
 
 .darkGreen-text {
   color: #08AD69;
+  text-shadow: 5px 5px 6px #111;
 }
 
 .purple-text {
   color: #540D6E;
 }
 
+.green-text {
+  color: #3BCEAB;
+}
+
 .gallery .hero-image {
   margin-bottom: 50.5px;
+  width: 80vw;
 }
 .gallery .hero-image .overlay h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
+  text-shadow: 5px 5px 6px #111;
 }
 .gallery .hero-image .overlay .number {
   font-size: 300px;
@@ -304,6 +311,7 @@ footer .copyright {
   display: flex;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
+  text-shadow: 5px 5px 6px #111;
 }
 .gallery .hero-image .overlay .text {
   font-size: 140px;
@@ -314,9 +322,10 @@ footer .copyright {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-shadow: 5px 5px 6px #111;
 }
 .gallery .paragraph {
-  max-width: 979.5px;
+  width: 979.5px;
   width: 80%;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -369,7 +378,7 @@ footer .copyright {
       align-self: flex-start;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1300px) {
   .hero-image {
     margin-left: 10%;
     margin-right: 10%;
@@ -385,7 +394,7 @@ footer .copyright {
             transform: translateY(20px);
   }
   .gallery .hero-image .overlay .text {
-    font-size: 70px;
+    font-size: 60px;
   }
   .gallery .paragraph {
     -webkit-box-orient: vertical;
@@ -692,7 +701,7 @@ footer .copyright {
   margin-bottom: 20px;
 }
 .gallery-page .container .row1 .imageOne {
-  max-width: 489px;
+  width: 489px;
   height: 187px;
   position: relative;
 }
@@ -718,10 +727,10 @@ footer .copyright {
           align-items: flex-end;
 }
 .gallery-page .container .row1 .imageTwo {
-  max-width: 187px;
-  max-height: 187px;
-  position: relative;
+  width: 187px;
+  height: 187px;
   margin-left: 20px;
+  position: relative;
 }
 .gallery-page .container .row1 .imageTwo img {
   width: 100%;
@@ -746,8 +755,8 @@ footer .copyright {
 }
 .gallery-page .container .row1 .imageThree {
   margin-left: 20px;
-  max-width: 265px;
-  max-height: 187px;
+  width: 265px;
+  height: 187px;
   position: relative;
 }
 .gallery-page .container .row1 .imageThree img {
@@ -775,13 +784,13 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .gallery-page .container .row2 .imageOne {
-  max-width: 603px;
+  width: 603px;
   height: 306px;
   position: relative;
 }
@@ -807,8 +816,8 @@ footer .copyright {
           align-items: flex-end;
 }
 .gallery-page .container .row2 .imageTwo {
-  max-width: 355px;
-  max-height: 306px;
+  width: 355px;
+  height: 306px;
   position: relative;
   margin-left: 20px;
 }
@@ -834,7 +843,7 @@ footer .copyright {
           align-items: flex-end;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1234px) {
   .gallery-page .container .row1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -843,9 +852,11 @@ footer .copyright {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   .gallery-page .container .row1 .imageOne {
     max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .gallery-page .container .row1 .imageTwo {

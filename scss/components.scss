@@ -1,5 +1,5 @@
 .hero-image {
-    width: 979.5px;
+    width: 80%;
     height: 378.75px;
     position: relative;
     .image {
@@ -49,6 +49,7 @@
 
 .darkGreen-text {
     color: $darkGreen;
+    text-shadow: 5px 5px 6px #111;
 }
 
 .purple-text {
@@ -56,29 +57,32 @@
 }
 
 .green-text {
-    color: $green;
+    color: $lightGreen;
 }
 
 .gallery {
     .hero-image {
         margin-bottom: 50.5px;
-        width: 100%;
+        width: 80vw;
         .overlay {
             h1 {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-weight: 400;
+                text-shadow: 5px 5px 6px #111;
             }
             .number {
                 font-size: 300px;
                 align-items: flex-end;
                 display: flex;
                 transform: translateY(40px);
+                text-shadow: 5px 5px 6px #111;
             }
             .text {
                 font-size: 140px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                text-shadow: 5px 5px 6px #111;
             }
         }
     }
@@ -125,7 +129,7 @@
     align-self: flex-start;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1300px) {
     .hero-image {
         margin-left: 10%;
         margin-right: 10%;
@@ -141,7 +145,7 @@
                     transform: translateY(20px);
                 }
                 .text {
-                    font-size: 70px;
+                    font-size: 60px;
                 }
             }
         }
