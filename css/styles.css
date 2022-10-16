@@ -64,11 +64,55 @@ nav .links a {
 nav .links .slash {
   color: #EE4367;
 }
+nav .menu {
+  display: none;
+}
+nav .menu svg {
+  fill: white;
+}
 
 .dark .links a {
   color: #000;
 }
+.dark .menu svg {
+  fill: #000;
+}
 
+.menu-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.menu-wrapper a {
+  color: #EE4367;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.menu-wrapper a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 750px) {
+  nav .links {
+    display: none;
+  }
+  nav .menu {
+    display: inline;
+  }
+}
 footer {
   height: 455px;
   width: 100%;
