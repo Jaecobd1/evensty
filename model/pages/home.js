@@ -28,6 +28,7 @@ const homeContent = `<div class="home">
                     <h1>upcoming events:</h1>
                 </div>
                 <div class="wrapper">
+                    <a id="jun06">
                     <div class="container">
                         <div class="date">
                             <div class="number">06</div>
@@ -38,7 +39,9 @@ const homeContent = `<div class="home">
                             <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur</div>
                         </div>
                     </div>
-                    <div class="container">
+                    </a>
+                   <a id="jul30">
+                         <div class="container">
                         <div class="date">
                             <div class="number">30</div>
                             <div class="month">JUL</div>
@@ -48,16 +51,20 @@ const homeContent = `<div class="home">
                             <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur</div>
                         </div>
                     </div>
+                    </a>
+                    <a id="aug30">
                     <div class="container">
                         <div class="date">
                             <div class="number">30</div>
-                            <div class="month">JUL</div>
+                            <div class="month">aug</div>
                         </div>
                         <div class="text">
                             <div class="main">Sed et persipiatis unde omnis iste natus</div>
                             <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur</div>
                         </div>
                     </div>
+                    </a>
+                   <a id="nov23">
                     <div class="container">
                         <div class="date">
                             <div class="number">23</div>
@@ -68,7 +75,9 @@ const homeContent = `<div class="home">
                             <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur</div>
                         </div>
                     </div>
-                    <div class="container">
+                    </a>
+                    <a id="dec23">
+<div class="container">
                         <div class="date">
                             <div class="number">23</div>
                             <div class="month">DEC</div>
@@ -78,6 +87,7 @@ const homeContent = `<div class="home">
                             <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur</div>
                         </div>
                     </div>
+                    </a>
                 </div>
             </section>
         </div>`;

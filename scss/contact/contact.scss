@@ -1,0 +1,78 @@
+.contact {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        width: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        h1 {
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .underline {
+            width: 229px;
+            margin-bottom: 65.5px;
+        }
+    }
+    .form-map {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        .form {
+            display: flex;
+            form {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 90px;
+                input {
+                    height: 60px;
+                    width: 529px;
+                    border: none;
+                    background-color: #F5F5F5;
+                    margin-bottom: 21px;
+                }
+                button {
+                    width: 167px;
+                    height: 60px;
+                    background-color: $pink;
+                    border: none;
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 16px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                #message {
+                    height: 506px;
+                }
+            }
+        }
+        .map {
+            width: 800px;
+            height: 866px;
+            margin-bottom: 90px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .contact {
+        .form-map {
+            flex-direction: column;
+            justify-content: center;
+            .map {
+                width: 400px;
+                height: 433px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

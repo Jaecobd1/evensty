@@ -960,6 +960,11 @@ footer .copyright {
 .blog-page .title .underline {
   width: 229px;
 }
+.blog-page .title h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
 .blog-page .wrapper {
   width: 80%;
   display: -webkit-box;
@@ -1023,7 +1028,6 @@ footer .copyright {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 2px solid black;
     padding: 5px;
   }
   .blog-page .wrapper .container .date {
@@ -1045,5 +1049,198 @@ footer .copyright {
   .blog-page .wrapper .container .image-text .text {
     margin-left: 20px;
     width: 80%;
+  }
+}
+.blog-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-post .hero-image-date {
+  position: relative;
+  width: 981px;
+  height: 300px;
+}
+.blog-post .hero-image-date .image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.blog-post .hero-image-date .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-post .hero-image-date .overlay {
+  position: absolute;
+  top: 0;
+  background-color: rgba(238, 67, 103, 0.6);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-post .hero-image-date .overlay .date {
+  width: 155px;
+  height: 155px;
+  color: white;
+}
+.blog-post .hero-image-date .overlay .date .number {
+  font-size: 55px;
+  font-style: bold;
+}
+.blog-post .hero-image-date .overlay .date .month {
+  font-size: 31px;
+}
+.blog-post .content {
+  width: 981px;
+  margin-bottom: 151px;
+}
+.blog-post .content .paragraph {
+  width: 856px;
+  margin-bottom: 33px;
+}
+.blog-post .content .title {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .blog-post .hero-image-date {
+    width: 80%;
+  }
+  .blog-post .hero-image-date .date {
+    width: 10%;
+    height: 10%;
+  }
+  .blog-post .content {
+    width: 80%;
+  }
+  .blog-post .content .paragraph {
+    width: 100%;
+  }
+}
+.contact {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .title {
+  width: 80%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contact .title h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.contact .title .underline {
+  width: 229px;
+  margin-bottom: 65.5px;
+}
+.contact .form-map {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .form-map .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .form-map .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+.contact .form-map .form form input {
+  height: 60px;
+  width: 529px;
+  border: none;
+  background-color: #F5F5F5;
+  margin-bottom: 21px;
+}
+.contact .form-map .form form button {
+  width: 167px;
+  height: 60px;
+  background-color: #EE4367;
+  border: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.contact .form-map .form form #message {
+  height: 506px;
+}
+.contact .form-map .map {
+  width: 800px;
+  height: 866px;
+  margin-bottom: 90px;
+}
+.contact .form-map .map img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1750px) {
+  .contact .form-map {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .form-map .map {
+    width: 400px;
+    height: 433px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
