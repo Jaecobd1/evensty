@@ -6,6 +6,7 @@ var MODEL = (function() {
     var _galleryContent = galleryContent;
     var _gallery1Content = gallery1Content;
     var _gallery2Content = gallery2Content;
+    var _blogContent = blogContent;
 
 
     function initListeners() {

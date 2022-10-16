@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     .hero-image {
+        width: 80vw;
         .overlay {
             background-color: rgba($color: $yellow, $alpha: 0.8);
             h1 {
@@ -17,14 +18,16 @@
             }
         }
     }
-    .underline {
-        width: 229px;
-    }
-    .paragraph {
-        max-width: 979.5px;
+    .wrapper {
         width: 80%;
-        p {
-            margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .underline {
+            width: 229px;
+            margin-bottom: 37px;
+        }
+        .paragraph {
+            width: 100%;
         }
     }
 }

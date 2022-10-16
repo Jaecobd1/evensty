@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+@font-face {
+  font-family: PT-Serif;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+.app {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,85 @@
+.blog-page {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        width: 80%;
+        .underline {
+            width: 229px;
+        }
+    }
+    .wrapper {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+        .container {
+            display: flex;
+            margin-bottom: 30px;
+            .date {
+                color: white;
+            }
+            .image-text {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                .image {
+                    height: 140px;
+                    width: 380px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .text {
+                    width: 380px;
+                    .main {
+                        margin-top: 20px;
+                        margin-bottom: 11px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-size: 15px;
+                        letter-spacing: 1.25px;
+                        font-weight: 500;
+                        color: #000;
+                    }
+                    .sub {
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-size: 13px;
+                        color: $pink;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1177px) {
+    .blog-page {
+        .wrapper {
+            .container {
+                flex-direction: column;
+                border: 2px solid black;
+                padding: 5px;
+                .date {
+                    margin-bottom: 20px;
+                }
+                .image-text {
+                    margin-left: 0;
+                    .image {
+                        width: 140px;
+                    }
+                    flex-direction: row;
+                    align-items: center;
+                    .text {
+                        margin-left: 20px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
