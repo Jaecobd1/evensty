@@ -46,7 +46,7 @@
   margin-bottom: 20px;
 }
 .gallery-page .container .row1 .imageOne {
-  max-width: 489px;
+  width: 489px;
   height: 187px;
   position: relative;
 }
@@ -72,8 +72,9 @@
           align-items: flex-end;
 }
 .gallery-page .container .row1 .imageTwo {
-  max-width: 187px;
-  max-height: 187px;
+  width: 187px;
+  height: 187px;
+  margin-left: 20px;
   position: relative;
 }
 .gallery-page .container .row1 .imageTwo img {
@@ -99,8 +100,8 @@
 }
 .gallery-page .container .row1 .imageThree {
   margin-left: 20px;
-  max-width: 265px;
-  max-height: 187px;
+  width: 265px;
+  height: 187px;
   position: relative;
 }
 .gallery-page .container .row1 .imageThree img {
@@ -128,13 +129,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .gallery-page .container .row2 .imageOne {
-  max-width: 603px;
+  width: 603px;
   height: 306px;
   position: relative;
 }
@@ -160,8 +161,8 @@
           align-items: flex-end;
 }
 .gallery-page .container .row2 .imageTwo {
-  max-width: 355px;
-  max-height: 306px;
+  width: 355px;
+  height: 306px;
   position: relative;
   margin-left: 20px;
 }
@@ -187,7 +188,7 @@
           align-items: flex-end;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1234px) {
   .gallery-page .container .row1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -196,21 +197,20 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   .gallery-page .container .row1 .imageOne {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .gallery-page .container .row1 .imageTwo {
     width: 100%;
-    max-width: 100%;
     height: 306px;
     margin-left: 0;
     margin-bottom: 20px;
   }
   .gallery-page .container .row1 .imageThree {
     width: 100%;
-    max-width: 100%;
     height: 306px;
     margin-left: 0;
     margin-bottom: 20px;
@@ -225,19 +225,17 @@
             align-items: center;
   }
   .gallery-page .container .row2 .imageOne {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .gallery-page .container .row2 .imageTwo {
     width: 100%;
-    max-width: 100%;
     height: 306px;
     margin-left: 0;
     margin-bottom: 20px;
   }
   .gallery-page .container .row2 .imageThree {
     width: 100%;
-    max-width: 100%;
     height: 306px;
     margin-left: 0;
     margin-bottom: 20px;

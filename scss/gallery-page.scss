@@ -17,16 +17,20 @@
         }
     }
     .container {
-        width: 80%;
+        width: 80vw;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         .row1 {
-            justify-content: center;
+            position: relative;
+            justify-content: space-between;
             display: flex;
             margin-bottom: 20px;
+            width: 80vw;
             .imageOne {
-                width: 489px;
-                height: 187px;
+                width: 40vw;
+                height: 20vh;
                 position: relative;
                 img {
                     width: 100%;
@@ -44,8 +48,8 @@
                 }
             }
             .imageTwo {
-                width: 187px;
-                height: 187px;
+                width: 20vw;
+                height: 20vh;
                 margin-left: 20px;
                 position: relative;
                 img {
@@ -65,8 +69,8 @@
             }
             .imageThree {
                 margin-left: 20px;
-                width: 265px;
-                height: 187px;
+                width: 26vh;
+                height: 20vh;
                 position: relative;
                 img {
                     width: 100%;
@@ -88,9 +92,10 @@
             display: flex;
             margin-bottom: 60px;
             justify-content: center;
+            width: 80vw;
             .imageOne {
-                width: 603px;
-                height: 306px;
+                width: 60vw;
+                height: 30vh;
                 position: relative;
                 img {
                     width: 100%;
@@ -108,8 +113,8 @@
                 }
             }
             .imageTwo {
-                width: 355px;
-                height: 306px;
+                width: 26vw;
+                height: 30vh;
                 position: relative;
                 margin-left: 20px;
                 img {
@@ -134,26 +139,27 @@
 @media only screen and (max-width: 1234px) {
     .gallery-page {
         .container {
+            width: 80vw;
+            display: flex;
             .row1 {
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+                margin-bottom: 0;
                 .imageOne {
-                    max-width: 100%;
-                    width: 100%;
+                    width: 80vw;
+                    height: 40vh;
                     margin-bottom: 20px;
                 }
                 .imageTwo {
-                    width: 100%;
-                    max-width: 100%;
-                    height: 306px;
+                    width: 80vw;
+                    height: 40vh;
                     margin-left: 0;
                     margin-bottom: 20px;
                 }
                 .imageThree {
-                    width: 100%;
-                    max-width: 100%;
-                    height: 306px;
+                    width: 80vw;
+                    height: 40vh;
                     margin-left: 0;
                     margin-bottom: 20px;
                 }
@@ -162,20 +168,13 @@
                 flex-direction: column;
                 align-items: center;
                 .imageOne {
-                    max-width: 100%;
+                    width: 80vw;
                     margin-bottom: 20px;
+                    height: 40vh;
                 }
                 .imageTwo {
-                    width: 100%;
-                    max-width: 100%;
-                    height: 306px;
-                    margin-left: 0;
-                    margin-bottom: 20px;
-                }
-                .imageThree {
-                    width: 100%;
-                    max-width: 100%;
-                    height: 306px;
+                    width: 80vw;
+                    height: 40vh;
                     margin-left: 0;
                     margin-bottom: 20px;
                 }

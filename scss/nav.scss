@@ -8,6 +8,7 @@ nav {
     align-items: center;
     position: sticky;
     z-index: 11;
+    margin-bottom: 50px;
     .logo {
         height: 42px;
         width: 92px;
@@ -36,6 +37,7 @@ nav {
 }
 
 .dark {
+    border-bottom: 2px solid black;
     .links {
         a {
             color: #000;
